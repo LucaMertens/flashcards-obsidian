@@ -476,7 +476,7 @@ export class Parser {
     }
 
     for (const markdownMatch of markdownMatches) {
-      links.push(decodeURIComponent(markdownMatch[1]));
+      links.push(markdownMatch[1]);
     }
 
     return links;
